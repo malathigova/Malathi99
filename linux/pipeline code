@@ -1,0 +1,10 @@
+pipeline{
+any agent {
+stages{
+stage{
+ step('build a jave environments')
+   sh ''' 
+        echo "Build the WORKSPACE commiting"
+        echo "$WORKSPACE"
+        echo "Build is successful"
+      '''
